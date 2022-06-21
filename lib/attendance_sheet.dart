@@ -241,7 +241,7 @@ class _AttendanceSheetState extends State<AttendanceSheet> {
       } else {
         Navigator.pop(context);
         rawsnackbar('Attendance already found..!!!',
-           icon: const Icon(
+            icon: const Icon(
               Icons.warning,
               color: Colors.red,
               size: 25.0,
@@ -323,7 +323,7 @@ class _AttendanceSheetState extends State<AttendanceSheet> {
                             "assets/images/bscs.png",
                             fit: BoxFit.fill,
                           )
-                        : Image.network(args['imgUrl']),
+                        : Image.network(args['imgUrl'], fit: BoxFit.fill),
                   ),
                 ),
                 // Second App Bar
